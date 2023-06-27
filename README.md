@@ -10,5 +10,5 @@ A list of technologies used within the project:
 * Javascript
 * React
 * NodeJS
- #### It also uses Alan AI and Materail UI for easy better user interface and easy access.
+ #### It also uses Alan AI and Material UI for easy better user interface and easy access.
 
