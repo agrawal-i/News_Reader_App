@@ -15,7 +15,7 @@ const alanKey = '7408951129dc3c5e5b579565073c5c292e956eca572e1d8b807a3e2338fdd0d
     useEffect(() => {
         alanBtn({
             key: alanKey,
-            onCommand: ({ command, articles,number }) => {
+            onCommand: ({ command, articles , number }) => {
                 if(command === 'newHeadlines'){
                     setNewsArticles(articles);
                     setActiveArticle(-1);
@@ -24,15 +24,20 @@ const alanKey = '7408951129dc3c5e5b579565073c5c292e956eca572e1d8b807a3e2338fdd0d
                     setActiveArticle((prevActiveArticle)=> prevActiveArticle+1);
                 }
                 else if(command === 'open'){
-                    const parsedNumber = number.length >2? wordsToNumbers((number),{fuzzy:true}):number;
+                    console.log(number);
+                    const parsedNumber = number.length >2? wordsToNumbers((number),{ fuzzy:true }) : number;
+                    console.log(parsedNumber);
                     const article=articles[parsedNumber-1];
-                    if (parsedNumber > articles.length) {
-                        alanBtn().playText('Please try that again...');
+                    
+                    if (parsedNumber > 20) {
+                        // alanBtn().playText('Please try that again...');
                       } else if (article) {
-                        window.open(article.url, '_blank');
-                        alanBtn().playText('Opening...');
-                      } else {
-                        alanBtn().playText('Please try that again...');
+                        console.log(article.url);
+                        window.open(article.url,"width=300, height=300");
+                        // alanBtn().playText('Opening...');
+                      }else{
+                        console.log('hey');
+                        // alanBtn().playText('Sorry couldn\'t open the article...');
                       }
                 }
             },

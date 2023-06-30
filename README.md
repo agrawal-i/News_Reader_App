@@ -1,13 +1,10 @@
 # SmartNewsReader
 ***
-An exclusive web platform built for easy access of latest news and information to everyone using it's voice command feature. A perfect place for those who are unable to read or write, to get to the current state of the world just by using a single command.
+ The app allows you to read the news from anywhere on the internet, from multiple newspapers. The most important feature about the app is that you dont even have to touch the mouse to get the news.
+ 
+Everything is activated by voice, and Alan the AI will deliver the latest news, delivers news based on different categories, delivers news based on different topics and gives the headlines from the top newspapers in the world. 
 
-## Technologies and Techstack Used
-***
-A list of technologies used within the project:
-* HTML
-* CSS
-* Javascript
-* React
-* NodeJS
- #### It also uses Alan AI and Material UI for easy better user interface and easy access.
+This application was made in [React](https://reactjs.org/), and it uses 
+- __[Alan AI](https://alan.app/)__ for the Voice Assistant
+- __[NewsAPI](https://newsapi.org/)__ to recieve the news in JSON Format
+- __[Material UI](https://material-ui.com/)__ for designing the front end for react applications
