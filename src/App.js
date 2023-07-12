@@ -43,6 +43,7 @@ const alanKey = '7408951129dc3c5e5b579565073c5c292e956eca572e1d8b807a3e2338fdd0d
             },
         });
     },[])
+    
 return (
     <div> 
         <div className={classes.logoContainer}>
